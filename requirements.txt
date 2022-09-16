@@ -1,0 +1,6 @@
+fastapi
+pydantic
+requests
+pytest
+pytest-cov
+python-dateutil
