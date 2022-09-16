@@ -46,4 +46,4 @@ def test_ligic():
     with open('test/test_cases/valid.json') as f:
         data  = json.loads(f.read())    
     res = client.post('http://127.0.0.1:8000/predict', json=data)
-    assert str(res.json()) == '{\'status\': \'SUCCESS\', \'data\': {\'31.01.2021\': 10050.0, \'28.02.2021\': 10100.25, \'31.03.2021\': 10150.75}}'
+    assert str(res.json()) == '{\'31.01.2021\': 10050.0, \'28.02.2021\': 10100.25, \'31.03.2021\': 10150.75}'
